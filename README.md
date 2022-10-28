@@ -4,3 +4,5 @@
   
 В данной программе реализованы сортировки - QuickSort, ShellSort, InsertionSort. 
 Интерфейс реализован с помощью wxWidgets
+<img width="850" alt="Снимок экрана 2022-10-28 в 19 47 00" src="https://user-images.githubusercontent.com/99604167/198690069-347b01a8-c344-46e4-bbcd-02591671086f.png">
+
