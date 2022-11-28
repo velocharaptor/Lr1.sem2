@@ -204,10 +204,10 @@ void QuickSortTest(ArraySequence<int> &arr,  vector<int> sortD_arr, string* x){
     ISort<int, TypeArr>::QuickSort(&arr);
     sort(sortD_arr.begin(), sortD_arr.end());
     for(int i = 0; i < 10; i++){
-        if(arr.Get(i) == sortD_arr[i])
+        if(arr.Get(i) != sortD_arr[i])
             key = 1;
     }
-    if(key == 1)
+    if(key != 1)
         *x += "QuickSortTest<int, TypeArr> - OK\n";
     else
         *x += "QuickSortTest<int, TypeArr> - FALSE\n";
@@ -217,10 +217,10 @@ void ShellSortTest(ArraySequence<int> &arr2,  vector<int> sortD_arr, string* x){
     ISort<int, TypeArr>::QuickSort(&arr2);
     sort(sortD_arr.begin(), sortD_arr.end());
     for(int i = 0; i < 10; i++){
-        if(arr2.Get(i) == sortD_arr[i])
+        if(arr2.Get(i) != sortD_arr[i])
             key = 1;
     }
-    if(key == 1)
+    if(key != 1)
         *x += "ShellSortTest<int, TypeArr> - OK\n";
     else
         *x += "ShellSortTest<int, TypeArr> - FALSE\n";
@@ -232,14 +232,15 @@ void InsertionSortTest(ArraySequence<int> &arr3,  vector<int> sortD_arr, string*
     sort(sortD_arr.begin(), sortD_arr.end());
 
     for(int i = 0; i < 10; i++){
-        if(arr3.Get(i) == sortD_arr[i])
+        if(arr3.Get(i) != sortD_arr[i])
             key = 1;
     }
-    if(key == 1)
+    if(key != 1)
         *x += "InsertionSortTest<int, TypeArr> - OK\n";
     else
         *x += "InsertionSortTest<int, TypeArr> - FALSE\n";
 }
+
 
 string SortTests(){
     int tmp_arr[10];
